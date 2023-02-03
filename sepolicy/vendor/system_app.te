@@ -5,3 +5,6 @@ allow system_app system_app:dir getattr;
 allow system_app system_app_data_file:dir search;
 allow system_app sysfs:dir {read};
 allow system_app sysfs:dir {open};
+
+# Allow KProfiles to be adjusted by a system app
+allow system_app sysfs_kprofiles:file rw_file_perms;
