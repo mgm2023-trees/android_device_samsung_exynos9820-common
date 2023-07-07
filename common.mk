@@ -294,6 +294,7 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     libshim_audioparams \
+    libshim_oemcrypto \
     libshim_sensorndkbridge
 
 # Soong Namespaces
