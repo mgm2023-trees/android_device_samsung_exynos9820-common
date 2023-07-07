@@ -13,6 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+## Build broken rules
+BUILD_BROKEN_DUP_RULES := true 
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+
 ## Include path
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
@@ -110,6 +114,9 @@ include hardware/samsung_slsi-linaro/config/BoardConfig9820.mk
 ## Properties
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+
+## Memory allocator
+PRODUCT_USE_SCUDO := true
 
 ## Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
