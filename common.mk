@@ -109,7 +109,9 @@ PRODUCT_PACKAGES += \
 # GNSS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor:64
-    
+
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 PRODUCT_PACKAGES += \
     GCamGo    
 
